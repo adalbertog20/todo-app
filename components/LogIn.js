@@ -11,7 +11,7 @@ export default function LogIn() {
       <Logo />
       <InputField placeholder="Username" />
       <InputField placeholder="Password" secureTextEntry={true} />
-      <CustomButton text="Log In"/>
+      <CustomButton text="Log In" />
       <CustomTextLink text={"Forgot Password?"} />
     </View>
   );
