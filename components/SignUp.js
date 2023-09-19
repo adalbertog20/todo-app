@@ -5,7 +5,7 @@ import InputField from "./InputField";
 import CustomButton from "./CustomButton";
 import CustomTextLink from "./CustomTextLink";
 
-export default function SignUp() {
+export default function SignUp( {navigation}) {
     return (
         <View>
             <Logo />
@@ -23,7 +23,9 @@ export default function SignUp() {
                     
                 <CustomButton text="Sign Up" />
                 <Text>or</Text>
-                <CustomTextLink text={"Log in?"} />
+                <CustomButton text={"Log in?"} onPress={() => {
+                    navigation.navigate('login')
+                }} />
             </View>
         </View>
     );

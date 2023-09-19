@@ -5,14 +5,21 @@ import InputField from "./InputField";
 import CustomButton from "./CustomButton";
 import CustomTextLink from "./CustomTextLink";
 
-export default function LogIn() {
+export default function LogIn({ navigation }) {
   return (
     <View>
       <Logo />
-      <InputField placeholder="Username" />
-      <InputField placeholder="Password" secureTextEntry={true} />
+      <InputField isName={true} />
+      <InputField isPassword={true} />
       <CustomButton text="Log In" />
-      <CustomTextLink text={"Forgot Password?"} />
+      <CustomButton text={"Forgot Password?"}
+        onPress={() => {
+          navigation.navigate('forgotpassword')
+        }} />
+      <CustomButton text={"Already have an account?"}
+        onPress={() => {
+          navigation.navigate('signup')
+        }} />
     </View>
   );
 }

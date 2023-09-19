@@ -5,7 +5,7 @@ import CustomTextLink from "./CustomTextLink";
 import InputField from "./InputField";
 import CustomButton from "./CustomButton";
 
-export default function ForgotPassword() {
+export default function ForgotPassword( { navigation } ) {
     return (
         <View 
         className="p-10">
@@ -13,9 +13,11 @@ export default function ForgotPassword() {
             <View className="flex items-center justify-center h-screen">
                 <Text className="text-3xl">Forgot Password</Text>
             </View>
-            <InputField placeholder="type your email" />
+            <InputField isEmail={true}/>
             <CustomButton text={"enviar"} />
-            <CustomTextLink text={"Log In"} />
+            <CustomButton text={"Log In"} onPress={() => {
+                navigation.navigate('login')
+            }} />
         </View>
     );
 }
