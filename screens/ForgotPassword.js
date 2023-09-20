@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
 import React, { useState } from 'react';
-import Logo from './Logo';
-import CustomTextLink from "./CustomTextLink";
-import InputField from "./InputField";
-import CustomButton from "./CustomButton";
+import Logo from '../components/Logo';
+import CustomTextLink from "../components/CustomTextLink";
+import InputField from "../components/InputField";
+import CustomButton from "../components/CustomButton";
 
 export default function ForgotPassword( { navigation } ) {
     return (

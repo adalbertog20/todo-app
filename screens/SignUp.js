@@ -1,9 +1,9 @@
 import { View, Text, ScrollView } from "react-native";
 import React from "react";
-import Logo from "./Logo";
-import InputField from "./InputField";
-import CustomButton from "./CustomButton";
-import CustomTextLink from "./CustomTextLink";
+import Logo from "../components/Logo";
+import InputField from "../components/InputField";
+import CustomButton from "../components/CustomButton";
+import CustomTextLink from "../components/CustomTextLink";
 
 export default function SignUp( {navigation}) {
     return (

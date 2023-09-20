@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { View, Text } from "react-native";
-import Logo from "./Logo";
-import InputField from "./InputField";
-import CustomButton from "./CustomButton";
-import CustomTextLink from "./CustomTextLink";
-import ConfirmPassword from "./ConfirmPassword";
+import Logo from "../components/Logo";
+import InputField from "../components/InputField";
+import CustomButton from "../components/CustomButton";
+import CustomTextLink from "../components/CustomTextLink";
+import ConfirmPassword from "../components/ConfirmPassword";
 
 export default function ResetPassword() {
     return (
