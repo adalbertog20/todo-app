@@ -42,7 +42,7 @@ export default function LogIn({ navigation }) {
         }}
       />
       <CustomButton
-        text={"Already have an account?"}
+        text={"Create an account?"}
         onPress={() => {
           navigation.navigate("signup");
         }}

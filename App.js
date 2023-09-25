@@ -15,7 +15,7 @@ export default function App() {
     <TailwindProvider>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="todo"
+          initialRouteName="login"
           screenOptions={{
             headerMode: "screen",
             headerTintColor: "white",
